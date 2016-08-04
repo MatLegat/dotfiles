@@ -22,4 +22,5 @@ export EDITOR="vim"
 
 export ANDROID_HOME=/opt/android-sdk
 
+omf theme bobthefish
 
