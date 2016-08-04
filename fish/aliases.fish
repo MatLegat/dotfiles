@@ -32,4 +32,5 @@ alias gl="git log --graph --oneline --all"
 alias gco="git checkout"
 alias ga="git add"
 alias gaa="git add -A"
+alias gb="git branch"
 
