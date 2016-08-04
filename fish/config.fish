@@ -15,12 +15,13 @@ source $OMF_PATH/init.fish
 
 source ~/.config/fish/aliases.fish
 
-cd ~
-
 export VISUAL="vim"
 export EDITOR="vim"
 
 export ANDROID_HOME=/opt/android-sdk
 
 omf theme bobthefish
+set fish_color_autosuggestion '777'
 
+cd ~
+bash ~/.fortune.sh 
