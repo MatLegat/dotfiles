@@ -1,0 +1,17 @@
+[user]
+  email = matteuslegat@gmail.com
+  name = Matteus Legat
+[alias]
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+[commit]
+  gpgsign = true
+  pgpsign = true
+[color]
+  ui = true
+[color "status"]
+  changed = red bold
+  untracked = red bold
+  added = green bold
