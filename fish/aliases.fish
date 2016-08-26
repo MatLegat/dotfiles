@@ -1,18 +1,19 @@
 type pacman > /dev/null ^ /dev/null; and begin
 
-  alias ps="sudo pacman -S"
-  alias pr="sudo pacman -R"
-  alias ys="yaourt -S"
-  alias yr="yaourt -R"
-  alias update="sudo pacman -Syu; and yaourt -Syua"
-  alias upgrade=update
+  abbr -a ps sudo pacman -S
+  abbr -a pr sudo pacman -R
+  abbr -a ys yaourt -S
+  abbr -a yr yaourt -R
+  abbr -a update sudo pacman -Syy
+  abbr -a upgrade sudo pacman -Syu; and yaourt -Syua
 
 end; or begin
 
-  alias ai="sudo apt install --reinstall"
-  alias ar="sudo apt remove"
-  alias update="sudo apt update"
-  alias upgrade="sudo apt upgrade"
+  abbr -a ai sudo apt install
+  abbr -a air sudo apt install --reinstall
+  abbr -a ar sudo apt remove
+  abbr -a update sudo apt update
+  abbr -a upgrade sudo apt upgrade
 
 end
 
@@ -22,15 +23,20 @@ alias octave="octave --no-gui"
 
 alias bth="echo connect FC:F1:52:EE:AB:4F | bluetoothctl"
 
-alias gpl="git pull"
-alias gps="git push"
-alias gcl="git clone"
-alias gc="git commit"
-alias gs="git status"
-alias gd="git diff"
-alias gl="git log --graph --oneline --all"
-alias gco="git checkout"
-alias ga="git add"
-alias gaa="git add -A"
-alias gb="git branch"
+abbr -a gpl git pull
+abbr -a gps git push
+abbr -a gcl git clone
+abbr -a gc git commit
+abbr -a gs git status
+abbr -a gd git diff
+abbr -a gl git log --graph --oneline --all
+abbr -a gco git checkout
+abbr -a ga git add
+abbr -a gaa git add -A
+abbr -a gb git branch
 
+function ..
+  for i in (seq 1 $argv)
+    cd ..
+  end
+end
