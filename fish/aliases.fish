@@ -5,7 +5,7 @@ type pacman > /dev/null ^ /dev/null; and begin
   abbr -a ys yaourt -S
   abbr -a yr yaourt -R
   abbr -a update sudo pacman -Syy
-  abbr -a upgrade sudo pacman -Syu; and yaourt -Syua
+  abbr -a upgrade 'sudo pacman -Syu; and yaourt -Syua'
 
 end; or begin
 
