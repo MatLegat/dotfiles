@@ -34,9 +34,3 @@ abbr -a gco git checkout
 abbr -a ga git add
 abbr -a gaa git add -A
 abbr -a gb git branch
-
-function ..
-  for i in (seq 1 $argv)
-    cd ..
-  end
-end
