@@ -12,6 +12,7 @@
 [color]
   ui = true
 [color "status"]
-  changed = red bold
-  untracked = red bold
+  changed = yellow bold
+  untracked = magenta bold
   added = green bold
+  deleted = red bold
